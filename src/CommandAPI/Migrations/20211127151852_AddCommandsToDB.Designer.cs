@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CommandAPI.Migrations
 {
     [DbContext(typeof(CommandContext))]
-    [Migration("20211127143539_AddCommandsToDB")]
+    [Migration("20211127151852_AddCommandsToDB")]
     partial class AddCommandsToDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
