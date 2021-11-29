@@ -26,6 +26,7 @@ namespace CommandAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Command>> GetCommandItems()
         {
+            //Comment weggooien
             //We'll remove after moving to production
             if(Response != null)
                 Response.Headers.Add("Environment", _hostEnv.EnvironmentName);
