@@ -438,8 +438,7 @@ namespace CommandAPi.Tests
             var result = controller.DeleteCommandItem(-1); 
 
             //Assert
-            //Assert.IsType<NotFoundResult>(result.Result);
-            Assert.IsType<OkResult>(result.Result);
+            Assert.IsType<NotFoundResult>(result.Result);
         }
         
         //TEST 5.4 INVALID OBJECT ID SUBMITTED – OBJECT COUNT REMAINS UNCHANGED
