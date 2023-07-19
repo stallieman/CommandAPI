@@ -11,7 +11,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace CommandAPI.Migrations
 {
     [DbContext(typeof(CommandContext))]
-    [Migration("20230719143127_AddCommandsToDB")]
+    [Migration("20230719145356_AddCommandsToDB")]
     partial class AddCommandsToDB
     {
         /// <inheritdoc />
