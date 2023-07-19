@@ -21,8 +21,6 @@ var services = builder.Services;
 
 var npgsqlBuilder = new NpgsqlConnectionStringBuilder();
 npgsqlBuilder.ConnectionString = Configuration.GetConnectionString("PostgreSqlConnection");
-npgsqlBuilder.Username = Configuration["UserID"];
-npgsqlBuilder.Password = Configuration["Password"];
 
 services.AddDbContext<CommandContext>(opt => opt.UseNpgsql(npgsqlBuilder.ConnectionString));
 
